@@ -1,5 +1,60 @@
 Responsive Filemanager Changelog 
 
+
+*********************************************************
+*  RFM 9.8
+*********************************************************
+- added pdf, openoffice files preview with customized viewer.js
+- added other office file preview with google preview
+- fixed ordering bug
+- improved layout style
+- added copy to clipboard button on show url dialog
+- fixed a bug when download a file
+- fixed a bug in relative path images creation
+- adding custom convert_spaces [by fungio]
+
+*********************************************************
+*  RFM 9.7.3
+*********************************************************
+- Fix a problem with lazy load and filters
+- add option to remember text filter in session
+
+*********************************************************
+*  RFM 9.7.2
+*********************************************************
+
+***** Major *****
+- Added mime type lib for downloads
+- Added lazy loading feature
+- Added options for auto and max image resizing
+- Lang. updates
+- Added touch devices support for drag&drop
+- Added support for returning relative URL-s
+- Bugfixes
+
+
+***** Detailed *****
+- Added mime type lib for downloads
+	All downloads no should load successfuly
+
+- Added lazy loading feature
+	Images will only load when in the viewport so when you are in a crowded folder it will load faster
+
+- Added options for auto and max image resizing
+	In the past all images that was resized either with max_image or auto resize was cropped.
+	Now the user can specify to crop,exact,landscape or portrait options.
+	The max image size can be overridden by auto resize option
+
+- Added support for returning relative URL-s
+	Relative URL-s can be returned when selecting files from the filemanager: a 'relative_url' GET parameter should be
+	added to the request with a value of "1" when opening RFM. Otherwise returned URL-s will be absolute.
+
+- Bugfixes
+	Fixed css bugs
+	Fixed drag&drop bugs
+	Removed 'default' access keys for security
+
+
 *********************************************************
 *  RFM 9.6.0
 *********************************************************
