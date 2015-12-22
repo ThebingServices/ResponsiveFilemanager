@@ -15,8 +15,5 @@
 		    "name": "Sam Mousa",
             "email": "sam@befound.nl"
         }
-    ],
-	"require" : {
-		"components/jquery": "dev-master"
-	}
+    ]
 }
